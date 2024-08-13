@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Digital Salon: A Copilot Studio for 3D Hair Generation, Editing, and Real-time Simulation</title>
+    <title>Digital Salon: A Copilot Studio for 3D Hair Grooming, Editing, and Real-time Simulation</title>
 
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -17,9 +17,10 @@
 
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script defer src="../static/js/fontawesome.all.min.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
     <script src="static/js/bulma-carousel.min.js"></script>
     <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/macros.js"></script>
 </head>
 
 <body>
@@ -28,11 +29,53 @@
             <div class="container is-max-desktop">
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
-                        <h1 class="title is-2 publication-title">Digital Salon: A Copilot Studio for 3D Hair Generation, Editing, and Real-time Simulation</h1>
+                        <h1 class="title is-2 publication-title">Digital Salon: A Copilot Studio for 3D Hair Grooming, Editing, and Real-time Simulation</h1>
 
-                        <div class="is-size-5 column has-text-centered">
-                            Submission ID: 133
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                <script>getConst("me");</script><sup>1</sup>*,
+                            </span>
+                            <span class="author-block">
+                                <script>getConst("alejandro");</script><sup>2</sup>*,
+                            </span>
+                            <span class="author-block">
+                                <script>getConst("yizho");</script><sup>3</sup>*,
+                            </span>
+                            <span class="author-block">
+                                <script>getConst("xinsun");</script><sup>3</sup>,
+                            </span>
+                            <span class="author-block">
+                                <script>getConst("zshu");</script><sup>3</sup>,
+                            </span>
+                            <span class="author-block">
+                                <script>getConst("soren");</script><sup>4</sup>,
+                            </span>
+                            <span class="author-block">
+                                <script>getConst("dmichels");</script><sup>2</sup>,
+                            </span>
+                            <span class="author-block">
+                                <script>getConst("mengzephyr");</script><sup>5</sup>,
+                            </span>
+                            <span class="author-block">
+                                <script>getConst("holly");</script><sup>1</sup>
+                            </span>
                         </div>
+
+                        <div class="is-size-6 publication-authors">
+                            <span class="author-block"><sup>1</sup>Yale University,</span>
+                            <span class="author-block"><sup>2</sup>KAUST,</span>
+                            <span class="author-block"><sup>3</sup>Adobe Research,</span>
+                            <span class="author-block"><sup>4</sup>CAU,</span>
+                            <span class="author-block"><sup>5</sup>Nanjing University of Science and Technology</span>
+                        </div>
+
+                        <div class="is-size-6 column has-text-centered">
+                            * Equal contribution
+                        </div>
+
+                        <!-- <div class="is-size-5 column has-text-centered">
+                            Submission ID: 133
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -47,7 +90,8 @@
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
                         <p>
-                            xxxxx
+                            Digital Salon is an AI and physics-driven 3D hair grooming and simulation tool. It integrates breakthrough real-time strand-based hair simulator and copilot 3D generation
+                            systems to allow users to interactively generate hairstyles through text prompts, configure hair dynamics with various interactions and obtain the AI-rendered images.
                         </p>
                     </div>
                 </div>
@@ -56,18 +100,23 @@
         </div>
     </section>
 
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <img src="assets/perm.png" class="center" />
+            </div>
+        </div>
+    </section>
 
     <section class="section">
         <div class="container is-max-desktop">
-            
 
             <!-- Technical Aspects. -->
             <div class="columns is-centered">
                 <div class="column is-full-width">
                     <h2 class="title is-3">Demos</h2>
-
                     <!-- AI/Manual-driven Hair Grooming. -->
-                    <h3 class="title is-4">Text/Manual-driven Hair Grooming</h3>
+                    <h3 class="title is-4">Text/Manual-guided Hair Grooming</h3>
                     <div class="content has-text-justified">
                         <p>
                             Unlike other motion models, NeMF is a continuous motion model that can synthesize motion at different frame rates in theory. However, in practice, the dimension of the
@@ -153,37 +202,47 @@
                 </div>
             </div>
             <!--/ Demos. -->
-
-            <!-- License -->
-            <div class="columns is-centered">
-                <div class="column is-full-width">
-                    <h2 class="title is-3">License</h2>
-                </div>
-            </div>
-            <!--/ License -->
-
-            <!-- Related Projects -->
-            <div class="columns is-centered">
-                <div class="column is-full-width">
-                    <h2 class="title is-3">Related Projects</h2>
-                </div>
-            </div>
-            <!--/ Related Projects -->
-
-
-            <!-- Citation -->
-            <div class="columns is-centered">
-                <div class="column is-full-width">
-                    <h2 class="title is-3">Citation</h2>
-                </div>
-            </div>
-            <!--/ Citation -->
-
-
-
     </section>
 
+    <!-- License -->
+    <section class="section" id="License">
+        <div class="container is-max-desktop content">
+            <h2 class="title">License</h2>
+            TBD
+        </div>
+    </section>
+    <!--/ License -->
 
+    <!-- Related Projects -->
+    <section class="section" id="Related Projects">
+        <div class="container is-max-desktop content">
+            <h2 class="title">Related Projects</h2>
+            <ol>
+                <li>
+                    <b>Perm: A Parametric Representation for Multi-Style 3D Hair Modeling</b>
+                    <br>
+                    Chengan He, Xin Sun, Zhixin Shu, Fujun Luan,Soren Pirk, Jorge Alejandro Amador Herrera,
+                    Dominik L.
+                    Michels,
+                    Tuanfeng Y. Wang, Meng Zhang, Holly Rushmeier and Yi Zhou
+                    <br>
+                    <i>arXiv preprint arXiv::2407.19451</i>
+                    <script>paper("https://arxiv.org/pdf/2407.19451");</script>
+                    <script>project("https://cs.yale.edu/homes/che/projects/perm");</script>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <!--/ Related Projects -->
+
+    <!-- Citation -->
+    <section class="section" id="Citation">
+        <div class="container is-max-desktop content">
+            <h2 class="title">Citation</h2>
+            <pre><code>TBD</code></pre>
+        </div>
+    </section>
+    <!--/ Citation -->
 
     <footer class="footer">
         <div class="container">
