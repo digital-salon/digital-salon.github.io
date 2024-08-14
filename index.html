@@ -33,10 +33,10 @@
 
                         <div class="is-size-5 publication-authors">
                             <span class="author-block">
-                                <script>getConst("me");</script><sup>1</sup>*,
+                                <script>getConst("me");</script><sup>1,3</sup>*,
                             </span>
                             <span class="author-block">
-                                <script>getConst("alejandro");</script><sup>2</sup>*,
+                                <script>getConst("alejandro");</script><sup>2,3</sup>*,
                             </span>
                             <span class="author-block">
                                 <script>getConst("yizho");</script><sup>3</sup>*,
@@ -115,8 +115,8 @@
             <div class="columns is-centered">
                 <div class="column is-full-width">
                     <h2 class="title is-3">Demos</h2>
-                    <!-- AI/Manual-driven Hair Grooming. -->
-                    <h3 class="title is-4">Text/Manual-guided Hair Grooming</h3>
+                    <!-- Text-guided Hair Generation. -->
+                    <h3 class="title is-4">Text-guided Hair Generation</h3>
                     <div class="content has-text-justified">
                         <p>
                             Unlike other motion models, NeMF is a continuous motion model that can synthesize motion at different frame rates in theory. However, in practice, the dimension of the
@@ -125,26 +125,26 @@
                         </p>
                         <div class="columns is-full-width">
                             <div class="column is-centered">
-                                <video muted="" loop="" playsinline="" controls="" width="100%">
-                                    <source src="./assets/video/30fps.mp4" type="video/mp4">
+                                <video muted loop playsinline controls width="100%">
+                                    <source src="assets/buzzed-cut.mp4" type="video/mp4">
                                 </video>
                             </div>
                             <div class="column is-centered">
-                                <video muted="" loop="" playsinline="" controls="" width="100%">
-                                    <source src="./assets/video/60fps.mp4" type="video/mp4">
+                                <video muted loop playsinline controls width="100%">
+                                    <source src="assets/wavy-hair.mp4" type="video/mp4">
                                 </video>
                             </div>
                             <div class="column is-centered">
-                                <video muted="" loop="" playsinline="" controls="" width="100%">
-                                    <source src="./assets/video/240fps.mp4" type="video/mp4">
+                                <video muted loop playsinline controls width="100%">
+                                    <source src="assets/double-ponytail.mp4" type="video/mp4">
                                 </video>
                             </div>
                         </div>
                     </div>
-                    <!--/ Text/Manual-driven Hair Grooming. -->
+                    <!--/ Text-guided Hair Generation. -->
 
-                    <!-- Real-time Simulation. -->
-                    <h3 class="title is-4">Real-time Simulation</h3>
+                    <!-- Interactive Hair Grooming. -->
+                    <h3 class="title is-4">Interactive Hair Grooming</h3>
                     <div class="content has-text-justified">
                         <p>
                             Unlike other motion models, NeMF is a continuous motion model that can synthesize motion at different frame rates in theory. However, in practice, the dimension of the
@@ -153,20 +153,48 @@
                         </p>
                         <div class="columns is-full-width">
                             <div class="column is-centered">
-                                <video muted="" loop="" playsinline="" controls="" width="100%">
-                                    <source src="./assets/video/30fps.mp4" type="video/mp4">
+                                <video muted loop playsinline controls width="100%">
+                                    <source src="assets/procedural-growth.mp4" type="video/mp4">
                                 </video>
                             </div>
                             <div class="column is-centered">
-                                <video muted="" loop="" playsinline="" controls="" width="100%">
-                                    <source src="./assets/video/60fps.mp4" type="video/mp4">
+                                <video muted loop playsinline controls width="100%">
+                                    <source src="assets/procedural-cut.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <!-- <div class="column is-centered">
+                                <video muted loop playsinline controls width="100%">
+                                    <source src="assets/double-ponytail.mp4" type="video/mp4">
+                                </video>
+                            </div> -->
+                        </div>
+                    </div>
+                    <!--/ Interactive Hair Grooming. -->
+
+                    <!-- Real-time Simulation. -->
+                    <h3 class="title is-4">Real-time Hair Simulation</h3>
+                    <div class="content has-text-justified">
+                        <p>
+                            Unlike other motion models, NeMF is a continuous motion model that can synthesize motion at different frame rates in theory. However, in practice, the dimension of the
+                            Fourier temporal features generated by positional encoding plays a critical role in the smoothness of motion. Here we show three comparisons of different dimensions to
+                            verify that a proper dimension choice can produce smooth motion even sampled at 240 fps.
+                        </p>
+                        <div class="columns is-full-width">
+                            <div class="column is-centered">
+                                <video muted loop playsinline controls width="100%">
+                                    <source src="assets/shake-it-off.mp4" type="video/mp4">
                                 </video>
                             </div>
                             <div class="column is-centered">
-                                <video muted="" loop="" playsinline="" controls="" width="100%">
+                                <video muted loop playsinline controls width="100%">
+                                    <source src="assets/gone-with-the-wind.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <!-- <div class="column is-centered">
+                                <video muted loop playsinline controls width="100%">
                                     <source src="./assets/video/240fps.mp4" type="video/mp4">
                                 </video>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <!--/ Real-time Simulation. -->
@@ -181,18 +209,18 @@
                         </p>
                         <div class="columns is-full-width">
                             <div class="column is-centered">
-                                <video muted="" loop="" playsinline="" controls="" width="100%">
-                                    <source src="./assets/video/30fps.mp4" type="video/mp4">
+                                <video muted loop playsinline controls width="100%">
+                                    <source src="assets/hair-render-1.mp4" type="video/mp4">
                                 </video>
                             </div>
                             <div class="column is-centered">
-                                <video muted="" loop="" playsinline="" controls="" width="100%">
-                                    <source src="./assets/video/60fps.mp4" type="video/mp4">
+                                <video muted loop playsinline controls width="100%">
+                                    <source src="assets/hair-render-2.mp4" type="video/mp4">
                                 </video>
                             </div>
                             <div class="column is-centered">
-                                <video muted="" loop="" playsinline="" controls="" width="100%">
-                                    <source src="./assets/video/240fps.mp4" type="video/mp4">
+                                <video muted loop playsinline controls width="100%">
+                                    <source src="assets/hair-render-3.mp4" type="video/mp4">
                                 </video>
                             </div>
                         </div>
