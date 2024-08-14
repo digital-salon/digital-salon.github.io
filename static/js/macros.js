@@ -45,6 +45,9 @@ function getConst(id) {
         case "mengzephyr":
             document.write("<a target='_blank' href='https://mengzephyr.com/'>Meng Zhang</a>");
             break;
+        case "yfeng":
+            document.write("<a target='_blank' href='https://is.mpg.de/~yfeng'>Yao Feng</a>");
+            break;
         case "junx":
             document.write("<a target='_blank' href='https://junxnui.github.io/'>Jun Xing</a>");
             break;
